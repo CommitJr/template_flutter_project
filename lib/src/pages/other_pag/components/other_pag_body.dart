@@ -1,7 +1,7 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import '../../app_bloc.dart';
+import '../../../app_bloc.dart';
 
 class Body {
   Widget getBody(context) {

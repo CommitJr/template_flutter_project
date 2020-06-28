@@ -1,10 +1,10 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
-import '../app_bloc.dart';
+import '../../app_bloc.dart';
 import 'components/home_body.dart';
 
 class Home extends StatelessWidget {
-  Body _body = Body();
+  final Body _body = Body();
 
   Widget _appBar(multiply) {
     return AppBar(

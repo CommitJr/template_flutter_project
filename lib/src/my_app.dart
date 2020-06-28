@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'app_bloc.dart';
-import 'package:template_flutter_project/src/shared/bloc/my_categories_bloc.dart';
-import 'package:template_flutter_project/src/shared/bloc/template_bloc.dart';
-import 'home/home.dart';
-import 'other_pag/other_pag.dart';
-import 'shared/repository/database/db_hive.dart';
+import 'package:template_flutter_project/src/shared/bloc/_bloc.dart';
+import 'pages/home/home.dart';
+import 'pages/other_pag/other_pag.dart';
 
 class MyApp extends StatelessWidget {
-  DbHive _dbHive;
-
   void initStatee() {
     print('init');
-    _dbHive = DbHive();
   }
 
   @override
@@ -25,8 +20,7 @@ class MyApp extends StatelessWidget {
          */
         blocs: [
           Bloc((_) => AppBloc()),
-          Bloc((_) => MyCategoriesBloc()),
-          Bloc((_) => TemplateBolc()),
+          Bloc((_) => BlocModel()),
         ],
         //-------------------------------------------
 

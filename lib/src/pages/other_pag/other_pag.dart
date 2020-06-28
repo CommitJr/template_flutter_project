@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'components/other_pag_body.dart';
 
 class OtherPag extends StatelessWidget {
-  Body _body = Body();
+  final Body _body = Body();
 
   @override
   Widget build(BuildContext context) {
